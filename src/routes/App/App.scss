@@ -1,0 +1,178 @@
+.Lab {
+  border-top: $sectionBorder;
+  border-bottom: $sectionBorder;
+  min-height: calc(100vh - 76px);
+  &__sider {
+    background: none;
+    border-right: $sectionBorder;
+  }
+  &__content__wrapper {
+    padding: 0 1.5rem 1.5rem;
+    @media (max-width: $xs) {
+      padding: 0 1.714rem 0.75rem;
+    }
+  }
+  &__content {
+    padding: 24px;
+    margin: 0;
+    min-height: 280px;
+    @media (max-width: $xs) {
+      padding: 0.75rem 0;
+    }
+  }
+}
+
+.Lab__menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  &__text {
+    @media (max-width: $xs) {
+      display: none;
+    }
+  }
+}
+
+.Lab__menu__item {
+  padding-left: 1rem;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  margin-bottom: 8px;
+  display: flex;
+  &.active {
+    background-color: $primaryColor;
+  }
+  &:hover{
+    color: $tertiaryColor;
+    .Lab__menu__icon {
+      fill: $tertiaryColor;
+    }
+  }
+  @media (max-width: $xs) {
+    border-bottom: 1px solid #2c2f36;
+    padding: 8px 1rem 8px 1rem;
+    height: 50px;
+    line-height: 1;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+}
+
+.Lab__menu__icon {
+  width: 18px;
+  height: auto;
+  fill: #fff;
+  margin-right: 0.625rem;
+  @media (max-width: $xs) {
+    width: 24px;
+    margin-right: 0;
+  }
+}
+
+.Lab__menu__icon--metamask {
+  display: none;
+  @media (max-width: $xs) {
+    display: block;
+  }
+}
+
+.Lab__account {
+  border-bottom: $sectionBorder;
+  padding: 8px 1rem 8px 1rem;
+  min-height: 40px;
+  line-height: 40px;
+  color: #fff;
+  @media (max-width: $xs) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.Lab__account__user {
+  display: flex;
+  align-items: center;
+  > h5 {
+    margin-bottom: 0;
+    @media (max-width: $xs) {
+      display: none;
+    }
+  }
+}
+
+.Lab__account__icon {
+  width: 22px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  margin-left: -1px;
+  @media (max-width: $xs) {
+    margin-right: 0;
+    width: 26px;
+  }
+  > path {
+    fill: $primaryColor;
+  }
+}
+
+.Lab__account__btn {
+  font-size: 1rem;
+  padding: 0.625rem 1rem;
+  line-height: 1.2;
+  cursor: pointer;
+  @media (max-width: $xs) {
+    padding: 0;
+    border: 0;
+  }
+}
+
+.Lab .ant-table {
+  background: none;
+  color: $defaultFontColor;
+  @media (max-width: $xs) {
+    .ant-table-thead {
+      display: none;
+    }
+    .ant-table-cell {
+      padding: 1rem 0rem;
+      .Btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .ant-table-row {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2rem;
+      border-bottom: $sectionBorder;
+      margin-bottom: 1rem;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  h5 {
+    color: $defaultHeadingColor;
+    font-weight: 500;
+  }
+  .ant-table-thead > tr > th {
+    background: none;
+    border-bottom: 1px solid #f0f0f0;
+    color: $defaultHeadingColor;
+  }
+  .ant-table-tbody > tr > td {
+    border-bottom: $tableBorder;
+    padding-bottom: 1.5rem;
+    @media (max-width: $xs) {
+      border-bottom: 0px;
+    }
+  }
+  .ant-table-tbody > tr.ant-table-row:hover > td {
+    background: rgba(244,244,244,0.2);
+    @media (max-width: $xs) {
+      background: none;
+    }
+  }
+  
+}

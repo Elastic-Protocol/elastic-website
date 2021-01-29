@@ -1,0 +1,59 @@
+.Home {
+  .HeroText {
+    > h1 {
+      text-shadow: 0 0 80px rgba(192,219,255,0.48), 0 0 32px rgba(65,120,255,0.24);
+      font-size: 4rem;
+      line-height: 4.5rem;
+      margin-bottom: 1.5rem;
+      max-width: 80%;
+      @media (max-width: $xs) {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+      }
+      @media (min-width: $lg) {
+        max-width: 100%;
+      }
+    }
+    > p {
+      font-size: 1.375rem;
+    }
+  }
+
+  .HeroText__actions {
+    margin-top: 2rem;
+    display: flex;
+    > div {
+      &:first-child {
+        margin-right: 2rem;
+        @media (max-width: $xs) {
+          .Btn--primary {
+            padding: 0.625rem 1rem;
+          }
+          margin-right: 1rem;
+        }
+      }
+      @media (max-width: $xs) {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .Btn {
+      &:not(.Btn--primary) {
+        color: #fff;
+        &:hover {
+          color: $tertiaryColor;
+        }
+      }
+      &:hover {
+        color: #fff;
+      }
+      @media (max-width: $xs) {
+        padding: 0.625rem 0.875rem;
+      }
+    }
+    @media (max-width: $xs) {
+      margin-bottom: 4rem;
+    }
+  }
+}

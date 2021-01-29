@@ -1,0 +1,39 @@
+.StakeView__input {
+  width: 100%;
+}
+
+.StakeView__action {
+  width: 100%;
+  cursor: pointer;
+  height: 54px;
+  font-size: 1.188rem;
+  border-radius: 0.5rem;
+}
+
+.WalletStat {
+  color: $defaultFontColor;
+  border-radius: 0.5rem;
+  width: auto;
+  padding: 0.625rem 0.938rem;
+  background: rgba(255,255,255,0.08);
+}
+
+.WalletStat__label {
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.WalletStat__value {
+  font-size: 1.063rem;
+  line-height: 1.563rem;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: $defaultHeadingColor;
+}
+
+.WalletStat__token {
+  font-size: 0.813rem;
+  font-weight: 300;
+}

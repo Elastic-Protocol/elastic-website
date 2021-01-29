@@ -1,0 +1,114 @@
+[
+  {
+    "id": "ELS-P1",
+    "poolName": "ELS Pool 1",
+    "projectName": "Elastic",
+    "image": "INR",
+    "contract": "0x30163316026edc8a6d189319d81a7FB8a3233675",
+    "pairId": "0x7EE6389d824130F7B57C857c7c468411b202EDaC",
+    "description": "Seeds the public supply of ELS. The more liquidity you provide, the greater share you receive.",
+    "descriptionLong": "Seeds the public supply of ELS and incentivizes liquidity and volume in the pool. The more liquidity you provide, and for longer, the greater share of INR you receive.",
+    "stakingToken": {
+      "name": "UNI-WETH-ELS-V2",
+      "tokenType": "liquidity",
+      "contract": "0x7ee6389d824130f7b57c857c7c468411b202edac",
+      "pairToken0": "0xB229fef67881D34804D47B29f6da70953548c782",
+      "pairToken1": "ETH"
+    },
+    "rewardToken": {
+      "name": "ELS",
+      "contract": "0xB229fef67881D34804D47B29f6da70953548c782"
+    },
+    "reward": {
+      "initial": 500000
+    },
+    "type": "Halving",
+    "period": "72 hours",
+    "startTime": 1610337987000,
+    "endTime": 1613016387000,
+    "status": "Active"
+  },
+  {
+    "id": "GROW-P1",
+    "poolName": "GROW Pool 1",
+    "projectName": "Elastic Grow",
+    "image": "GP",
+    "contract": null,
+    "description": "Available to ELS holders. Seeds the initial supply of eGROW.",
+    "descriptionLong": "Seeds the public supply of ELS and incentivizes liquidity and volume in the pool. The more liquidity you provide, and for longer, the greater share of ELS you receive.",
+    "stakingToken": {
+      "name": "ELS",
+      "tokenType": "token",
+      "contract": "0xB229fef67881D34804D47B29f6da70953548c782"
+    },
+    "rewardToken": {
+      "name": "GROW",
+      "contract": null
+    },
+    "reward": {
+      "initial": 1000000
+    },
+    "type": "Halving",
+    "period": "72 hours",
+    "startTime": 1610337987000,
+    "endTime": 1613016387000,
+    "status": "Inactive"
+  },
+  {
+    "id": "GROW-P2",
+    "poolName": "GROW Pool 2",
+    "projectName": "Elastic Grow",
+    "image": "GP",
+    "contract": null,
+    "description": "Available to ELS liquidity providers. Seeds the initial supply of eGROW.",
+    "descriptionLong": "Seeds the public supply of INR and incentivizes liquidity and volume in the pool. The more liquidity you provide, and for longer, the greater share of INR you receive.",
+    "stakingToken": {
+      "name": "UNI-WETH-eGROW-V2",
+      "tokenType": "liquidity",
+      "contract": "0x7ee6389d824130f7b57c857c7c468411b202edac",
+      "pairToken0": "0xB229fef67881D34804D47B29f6da70953548c782",
+      "pairToken1": "ETH"
+    },
+    "rewardToken": {
+      "name": "GROW",
+      "contract": null
+    },
+    "reward": {
+      "initial": 1000000
+    },
+    "type": "Halving",
+    "period": "72 hours",
+    "startTime": 1610337987000,
+    "endTime": 1613016387000,
+    "status": "Inactive"
+  },
+  {
+    "id": "GROW-P3",
+    "poolName": "GROW Pool 3",
+    "projectName": "Elastic Grow",
+    "image": "GP",
+    "contract": null,
+    "description": "Incentivizes liquidity and volume in the pool to increase security.",
+    "descriptionLong": "Seeds the public supply of INR and incentivizes liquidity and volume in the pool. The more liquidity you provide, and for longer, the greater share of INR you receive.",
+    "stakingToken": {
+      "name": "UNI-WETH-eGROW-V2",
+      "tokenType": "liquidity",
+      "contract": null,
+      "pairToken0": null,
+      "pairToken1": null
+    },
+    "rewardToken": {
+      "name": "GROW",
+      "contract": null
+    },
+    "reward": {
+      "initial": 1000000
+    },
+    "type": "Halving",
+    "period": "72 hours",
+    "startTime": 1610337987000,
+    "endTime": 1613016387000,
+    "status": "Inactive"
+  }
+  
+]

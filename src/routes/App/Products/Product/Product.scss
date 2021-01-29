@@ -1,0 +1,139 @@
+.Product {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: $screenColor;
+  backdrop-filter: blur(3px);
+  width: calc(100vw);
+  max-height: calc(100vh);
+  overflow-y: scroll;
+  .StakeTable {
+    margin-bottom: 1rem;
+    @media (max-width: $xs) {
+      display: none;
+    }
+  }
+  @media (max-width: $xs) {
+    z-index: 2;
+    background-color: #000;
+  }
+}
+
+.Product__container {
+  background-color: $backgroundColor;
+  max-width: 700px;
+  min-height: 200px;
+  margin: 4rem auto;
+  border-radius: 0.5rem;
+  position: relative;
+  @media (max-width: $xs) {
+    margin: 0;
+    height: fit-content;
+  }
+}
+
+.Product__close {
+  position: absolute;
+  right: 6px;
+  padding: 14px 18px;
+  display: block;
+  z-index: 2;
+  > svg {
+    width: 26px;
+    fill: $defaultFontColor;
+  }
+  &:hover {
+    > svg {
+      fill: $primaryColor;
+    }
+  }
+}
+
+.Product__content {
+  padding: 2rem 1.5rem 2rem;
+  color: $defaultFontColor;
+}
+
+.ProductStat {
+  color: $defaultFontColor;
+  border-radius: 0.5rem;
+  width: auto;
+  padding: 0.625rem 0.938rem;
+  background: rgba(255,255,255,0.08);
+}
+
+.ProductStat__label {
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.ProductStat__value {
+  font-size: 1.063rem;
+  line-height: 1.563rem;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: $defaultHeadingColor;
+}
+
+.Product__title {
+  display: flex;
+  align-items: center;
+  &__image {
+    display: flex;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+  h3 {
+    color: $defaultHeadingColor;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .StakeItem__icon {
+    margin-right: 1rem;
+  }
+}
+
+.Product__description {
+  > p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.Product__list {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  > li {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    > span {
+      &:nth-child(1) {
+        font-weight: 300;
+        font-size: 0.938rem;
+      }
+      &:nth-child(2) {
+        font-weight: 600;
+        font-size: 1.063rem;
+      }
+    }
+  }
+}
+
+.Product__action {
+  width: 100%;
+  cursor: pointer;
+  height: 54px;
+  font-size: 1.188rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  line-height: 34px;
+}

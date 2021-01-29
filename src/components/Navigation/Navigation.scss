@@ -1,0 +1,38 @@
+.Nav__item {
+  &--hasDropdown {
+    position: relative;
+  }
+  z-index: 101;
+}
+
+.Nav__link {
+  font-size: 1rem;
+  color: #fff;
+  padding: 10px 10px 0;
+  line-height: 20px;
+  transition: none;
+  display: block;
+  white-space: nowrap;
+  &:hover {
+    color: $tertiaryColor;
+  }
+  &.active {
+    color: $tertiaryColor;
+  }
+  &.Nav__btn {
+    padding: 0;
+  }
+}
+
+.App__btn {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  &:hover {
+    color: $tertiaryColor;
+  }
+  &.active {
+    color: $tertiaryColor;
+  }
+}

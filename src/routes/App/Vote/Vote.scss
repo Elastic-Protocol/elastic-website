@@ -1,0 +1,17 @@
+.Vote {
+  &__content {
+    min-height: calc(100vh - #{$headerHeight} - 48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    display: none;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    @media (max-width: $xs) {
+      display: block;
+    }
+  }
+}

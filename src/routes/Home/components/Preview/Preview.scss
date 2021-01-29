@@ -1,0 +1,20 @@
+.Preview__tabs {
+  color: inherit;
+  padding: 0 0.5rem;
+  h4 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  }
+  .ant-tabs-ink-bar {
+    background: $primaryColor;
+  }
+}
+
+.Preview__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

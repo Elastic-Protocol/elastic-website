@@ -1,0 +1,51 @@
+@import "../../../theme.scss";
+
+.AppHeader {
+  width: 100%;
+}
+
+.AppHeader__container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  flex-flow: nowrap;
+  height: $headerHeight;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: $xs) {
+    max-width: 100%;
+    flex-flow: wrap;
+    padding: 0 1rem;
+    height: $headerHeightXs;
+  }
+  @media (max-width: 1310px) {
+    padding: 0 1rem;
+  }
+  .isLab & {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+.AppHeader__logo {
+  display: flex;
+  align-items: center;
+  max-width: 160px;
+  margin-top: -10px;
+  @media (max-width: $xs) {
+    width: 120px;
+  }
+}
+
+.AppHeader__right {
+  @media (min-width: $md) {
+    display: flex;
+    align-items: center;
+  }
+  display: none;
+}
+
+.AppHeader__actions__wrapper {
+  margin-left: 60px;
+}

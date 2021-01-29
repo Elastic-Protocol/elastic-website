@@ -1,0 +1,44 @@
+.PoolInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.PoolInput__control {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.PoolInput__control__button {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: $secondaryColor;
+  &:hover {
+    background-color: $tertiaryColor;
+  }
+}
+
+.PoolInput__input {
+  appearance: none;
+  width: 100%;
+  height: 54px;
+  font-size: 1.188rem;
+  background: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin: 0px;
+  text-indent: 0.875rem;
+  font-weight: 500;
+  padding: 12px 10px;
+}
+
+.PoolInput__action {
+  height: 54px;
+  font-size: 1.188rem;
+  border-radius: 0.5rem;
+}

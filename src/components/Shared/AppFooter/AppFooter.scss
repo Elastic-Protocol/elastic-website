@@ -1,0 +1,101 @@
+@import "../../../theme.scss";
+
+.AppFooter {
+  width: 100%;
+  h4 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
+
+.AppFooter__container {
+  padding: 4rem 0;
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  flex-flow: nowrap;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  color: $defaultFontColor;
+  position: relative;
+  @media (max-width: $xs) {
+    max-width: 100%;
+    flex-flow: wrap;
+    padding: 1rem 1rem;
+  }
+  @media (max-width: 1310px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .isLab & {
+    max-width: 100%;
+    padding: 2rem 1rem;
+    justify-content: flex-end;
+  }
+}
+
+.AppFooter__left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  @media (max-width: $xs) {
+    display: none;
+  }
+  .isLab & {
+    display: none;
+  }
+}
+
+.AppFooter__right {
+  .AppFooter__section {
+    padding-right: 0;
+    > p {
+      font-size: 1rem;
+      margin-bottom: 0;
+      @media (max-width: $xs) {
+        align-self: flex-end;
+      }
+    }
+  }
+  @media (max-width: $xs) {
+    width: 100%;
+  }
+}
+
+.AppFooter__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px;
+  padding-right: 5rem;
+}
+
+.AppFooter__link__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px;
+}
+
+.AppFooter__link__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-decoration: none;
+  margin: 0px 0px 1rem;
+  padding: 0px;
+  
+}
+
+.AppFooter__link {
+  text-decoration: none;
+  color: $defaultFontColor;
+  &:hover {
+    color: #efc2d3;
+  }
+  &.active {
+    color: #efc2d3;
+  }
+}

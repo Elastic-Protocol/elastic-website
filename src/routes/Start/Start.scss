@@ -1,0 +1,61 @@
+.Start {
+  .Section__container {
+    max-width: 700px;
+  }
+  h2 {
+    font-size: 2.5rem;
+    border-bottom: $sectionBorder;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.Start__timeline {
+  margin-top: 4rem;
+  .ant-timeline-item-tail {
+    border-left: none;
+    background: url('../../components/Assets/Images/border_image_dashed.svg') repeat-y;
+    width: 2px;
+    left: 6px;
+    top: 14px;
+  }
+  .ant-timeline-item-head {
+    width: 14px;
+    height: 14px;
+  }
+  .ant-timeline-item-head-blue {
+    background-color: $primaryColor;
+    border: 0px;
+    top: 14px;
+  }
+  .ant-timeline-item-content {
+    margin-left: 40px;
+    margin-bottom: 1rem;
+  }
+}
+
+.Start__timeline__item {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem 1.250rem;
+  > h4 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  > p {
+    color: $defaultFontColor;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  > ul {
+    color: $defaultFontColor;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.438rem;
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+    > li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

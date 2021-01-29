@@ -1,0 +1,270 @@
+@import '~antd/dist/antd.css';
+
+@import "./theme.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  @media (max-width: $xs) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: $defaultFont;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $backgroundColor;
+  color: $defaultFontColor;
+}
+
+.ant-layout {
+  background: none;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $defaultHeadingColor;
+}
+
+h1 {
+  font-size: 4.25rem;
+  line-height: 4.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.7px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.75rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.7px;
+  font-weight: 700;
+  text-shadow: 0 0 80px rgba(192,219,255,0.48), 0 0 32px rgba(65,120,255,0.24);
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.250rem;
+  letter-spacing: -0.3px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1.250rem;
+  letter-spacing: -0.7px;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+}
+
+.color-secondary {
+  color: $secondaryColor;
+}
+
+.color-tertiary {
+  color: $tertiaryColor;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.text-centered {
+  text-align: left;
+  @media (min-width: $lg) {
+    text-align: center;
+  }
+}
+
+.hoz-btn-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.vertical-centered {
+  display: flex;
+  align-items: center;
+}
+
+.Btn {
+  border-radius: $buttonBorderRadius;
+  padding: 0.625rem 1.625rem;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  font-weight: 600;
+  cursor: pointer;
+  &--primary {
+    border: $buttonPrimaryBorder;
+    background: $buttonPrimaryBackground;
+    color: $buttonPrimaryColor;
+    &:hover {
+      background: $buttonPrimaryBackgroundHover;
+      color: $buttonPrimaryColorHover;
+    }
+  }
+  &--secondary {
+    border: $buttonPrimaryBorder;
+    background: $buttonPrimaryBackgroundHover;
+    color: $buttonPrimaryColorHover;
+    &:hover {
+      background: $buttonPrimaryBackground;      
+      color: $buttonPrimaryColor;
+    }
+  }
+  &--tertiary {
+    border: $buttonTertiaryBorder;
+    background: $buttonTertiaryBackground;
+    color: $buttonTertiaryColor;
+    &:hover {
+      background: $buttonTertiaryBackgroundHover;      
+      color: $buttonTertiaryColorHover;
+    }
+  }
+  &--ghost {
+    color: #fff;
+    &:hover {
+      color: $tertiaryColor;
+    }
+  }
+}
+
+.Section__wrapper {
+  padding: 4rem 0 2rem;
+  @media (max-width: $xs) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.Section__container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  &--noTop {
+    padding-top: 0;
+  }
+  @media (min-width: $lg) {
+    flex-flow: nowrap;
+  }
+  @media (max-width: $xs) {
+    max-width: 100%;
+    flex-flow: wrap;
+  }
+}
+
+.Feature__icon {
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  width: 4.875rem;
+  height: 4.625rem;
+  > path {
+    fill: $primaryColor;
+  }
+  @media (max-width: $xs) {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 0.750rem;
+    min-height: auto;
+  }
+}
+
+.Feature__text {
+  font-size: 1.125rem;
+  line-height: 1.375em;
+}
+
+.mobile-menu {
+  display: none;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  .ant-layout-sider-zero-width-trigger {
+    top: 1rem;
+    right: 1rem;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    &:hover::after {
+      background: transparent;
+    }
+  }
+  display: block;
+  @media (min-width: $md) {
+    display: none;
+  }
+}
+
+.sider-active {
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.padded-column {
+  padding: 0 2rem;
+  @media (max-width: $xs) {
+    padding: 0;
+  }
+}
+
+.sub-text {
+  font-size: 1.125rem;
+  .padded-column & {
+    margin-bottom: 0;
+  }
+}
+
+.more-link {
+  &:after {
+    background-image: $moreIcon;
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 0.688rem;
+    background-size: 1rem 0.688rem;
+    margin-left: 0.250rem;
+  }
+  .padded-column & {
+    display: block;
+    margin-top: 0.250em;
+  }
+}
+
+.heading-clipped {
+  @media (min-width: $lg) {
+    padding: 0 14rem;
+  }
+}
+
+.text-link {
+  color: $defaultHeadingColor;
+  font-weight: 500;
+}

@@ -1,0 +1,65 @@
+.PoolItem {
+  margin-bottom: 1rem;
+  background: rgba(255,255,255,0.08);
+  color: $defaultFontColor;
+  border: 0;
+  width: 48%;
+  padding: 1rem;
+  height: 203px;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    transform: scale(1.04);
+    color: inherit;
+    background: rgba(255,255,255,0.16);
+  }
+  @media (max-width: $xs) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.PoolItem__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.625rem;
+  .ant-badge-status-dot {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+}
+
+.PoolItem__title {
+  display: flex;
+  align-items: center;
+}
+
+.PoolItem__icon {
+  margin: 0 0.5rem 0 -2px;
+  width: 25px;
+  height: 25px;
+}
+
+.PoolItem__description {
+  font-size: 0.938rem;
+  line-height: 1.4;
+  margin-bottom: 0.425rem;
+  min-height: 3.563rem;
+}
+
+.PoolItem__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.PoolItem__list {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.PoolItem__label {
+  font-weight: bold;
+}

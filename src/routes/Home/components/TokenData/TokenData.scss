@@ -1,0 +1,22 @@
+.TokenData {
+  width: 100%;
+  @media (max-width: $xs) {
+    display: none;
+  }
+}
+
+.TokenData__item {
+  border-radius: 0.125rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-left: 0.75rem solid $primaryColor;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  > h4 {
+    font-size: 1rem;
+  }
+  > p {
+    margin-bottom: 0;
+  }
+}
