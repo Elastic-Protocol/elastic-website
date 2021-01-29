@@ -1,0 +1,2 @@
+(this["webpackJsonpelastic-website"]=this["webpackJsonpelastic-website"]||[]).push([[14],{482:function(e,t,s){},491:function(e,t,s){"use strict";s.r(t);var c=s(4),n=(s(2),s(75));s(482);t.default=function(){return Object(c.jsxs)("div",{className:"Vote",children:[Object(c.jsx)("h2",{className:"Vote__title",children:"Vote"}),Object(c.jsx)("div",{className:"Vote__content",children:Object(c.jsx)(n.c,{heading:"Coming Soon",content:"Use ELS to vote on which new E-Fi product proposals should be launched."})})]})}}}]);
+//# sourceMappingURL=14.6c1b9827.chunk.js.map

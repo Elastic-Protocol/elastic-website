@@ -1,0 +1,2 @@
+(this["webpackJsonpelastic-website"]=this["webpackJsonpelastic-website"]||[]).push([[13],{481:function(e,s,t){},490:function(e,s,t){"use strict";t.r(s);var o=t(4),c=(t(2),t(75));t(481);s.default=function(){return Object(o.jsxs)("div",{className:"Propose",children:[Object(o.jsx)("h2",{className:"Propose__title",children:"Propose"}),Object(o.jsx)("div",{className:"Propose__content",children:Object(o.jsx)(c.c,{heading:"Coming Soon",content:"Use ELS to propose new E-Fi products to be chosen by the community."})})]})}}}]);
+//# sourceMappingURL=13.1e27f76c.chunk.js.map
