@@ -22,12 +22,17 @@ const Preview = () => {
   
   return (
     <Tabs className="Preview__tabs" defaultActiveKey="1">
-      <TabPane tab={<h4>Latest Products</h4>} key="1">
+      <TabPane tab={<h4>Elastic Token</h4>} key="1">
         <div className="Preview__inner">
           {Products.map((item, index) => <ProductItem provider={provider} item={item} key={index+1} /> )}
         </div>
       </TabPane>
-      <TabPane tab={<h4>Latest Staking Pools</h4>} key="2">
+      <TabPane tab={<h4>Latest Assets</h4>} key="2">
+        <div className="Preview__inner">
+          {Products.map((item, index) => <ProductItem provider={provider} item={item} key={index+1} /> )}
+        </div>
+      </TabPane>
+      <TabPane tab={<h4>Latest Staking Pools</h4>} key="3">
         <div className="Preview__inner">
           {Pools.map((item, index) => <PoolItem provider={provider} item={item} key={index+1} /> )}
         </div>

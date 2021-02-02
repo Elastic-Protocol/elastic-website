@@ -1,14 +1,18 @@
 import React, { FC } from 'react';
 import { Link } from "react-router-dom";
+import {
+  DOCS_ADDRESS,
+} from '../../../../data/constants';
+
 import './HeroText.scss';
 
 const HeroText: FC = () => (
   <div className="HeroText">
     <h1>Trustless self-collateralizing markets</h1>
-    <p>Elastic is a decentralized synthetic asset issuance protocol completely removed from the existing financial ecosystem.</p>
+    <p>Elastic's self-collateralizing synthetic assets enable the creation of innovative new markets that can track the price of anything.</p>
     <div className="HeroText__actions">
       <div><Link to={`/start`} className="Btn Btn--secondary">Get started</Link></div>
-      <div><Link to={`/start`} className="Btn Btn--ghost">Read docs</Link></div>
+      <div><Link to={`${DOCS_ADDRESS}`} className="Btn Btn--ghost">Read docs</Link></div>
     </div>
   </div>
 );

@@ -30,8 +30,7 @@ const Home: FC = () => (
       <Row className="Section__container">
         <Col lg={{ span: 18, offset: 3 }} xs={{ span: 24 }}>
           <h2 className="text-centered heading-clipped">A new class of financial products</h2>
-          <p className="text-centered">Elastic assets derive their value from the performance of an underlying resource without needing to collateralize or hold the resource.</p>
-          <p className="text-centered">Almost anything can be ‘elasticized’ to provide exposure to an asset - enabling the creation of innovative new financial markets.</p>
+          <p className="text-centered">Elastic Assets derive their value from the performance of an underlying resource without the need to collateralize or hold the resource. Almost anything can be ‘elasticized’ to provide exposure to a resource - enabling the creation of innovative new financial markets.</p>
         </Col>
       </Row>
       <Row className="Section__container">
@@ -84,7 +83,7 @@ const Home: FC = () => (
         <Col lg={{ span: 11, offset: 0 }} xs={{ span: 24 }} className="vertical-centered">
           <div>
             <h2>How does it work?</h2>
-            <p>Elastic's assets use elastic-supply mechanisms developed by <a className="text-link" target="_blank" rel="noreferrer" href="https://www.ampleforth.org/">Ampleforth</a> to self-collateralize by automatically adjusting their supply to match the price of the underlying resources they represent.</p>
+            <p>Elastic's Assets self-collateralize by automatically adjusting their supply to match the value of the underlying resources they represent.</p>
             <p>Supply adjustments are triggered in response to price changes of the underlying resources or the Elastic asset itself.</p>
             <a 
               className="Btn Btn--primary"
@@ -110,8 +109,8 @@ const Home: FC = () => (
         <Col lg={{ span: 11, offset: 2 }} xs={{ span: 24 }} className="vertical-centered">
           <div>
             <h2>Elastic Token (ELS)</h2>
-            <p>ELS is Elastic’s fixed-supply governance token which incentivizes the growth of Elastic markets and provides a mechanism for participating in the entire Elastic asset class.</p>
-            <p>ELS plays multiple other roles including: seeding new Elastic markets, diversifying exposure and providing community-owned governance.</p>
+            <p>Elastic Token (ELS) is Elastic’s fixed-supply governance token which incentivizes participation, stability, fairness and growth in Elastic Asset markets.</p>
+            <p>ELS holders steer the evolution of the Elastic protocol through a system of democratic governance and can leverage their position to gain exposure to the entire asset class.</p>
             <div className="Section__actions">
               <div>
                 <a 
@@ -134,14 +133,14 @@ const Home: FC = () => (
       <Row className="Section__container">
         <Col lg={{ span: 18, offset: 3 }} xs={{ span: 24 }}>
           <h2 className="text-centered heading-clipped">Incentivized marketplace</h2>
-          <p className="text-centered">The Elastic ecosystem consists primarily of three types of users: Elastic Token (ELS) holders, liquidity providers and Elastic asset holders.</p>
+          <p className="text-centered">The Elastic ecosystem consists primarily of three types of users: Elastic Token holders, Liquidity Providers and Elastic Asset holders.</p>
         </Col>
       </Row>
       <Row className="Section__container">
         <Col className="padded-column text-centered" lg={{ span: 8 }} sm={{ span: 12 }} xs={{ span: 24 }}>
           <div>
             <IconCex className="Feature__icon" />
-            <h4>Elastic Token Holders</h4>
+            <h4>Elastic Token (ELS) Holders</h4>
           </div>
           <div>
             <p className="sub-text">ELS holders are incentivized to increase fairness, robustness and efficiency in markets.</p>
@@ -178,7 +177,7 @@ const Home: FC = () => (
             <h4>Elastic Asset Holders</h4>
           </div>
           <div>
-            <p className="sub-text">Elastic asset holders are participants in markets incentivized to provide growth and sustainability.</p>
+            <p className="sub-text">Elastic Asset Holders are incentivized to provide growth and sustainability in markets.</p>
             <a 
               className="Btn Btn--ghost"
               href={`${DOCS_ADDRESS}`}
