@@ -40,11 +40,20 @@ const Navigation = () => {
       </div>
       <div className="Nav__item">
         <NavLink
+          to="/app/products/els"
+          className="Nav__link Nav__btn"
+          isActive={(match) => (!match || !match.isExact) ? false : true}
+        >
+          ELS Token
+        </NavLink>
+      </div>
+      <div className="Nav__item">
+        <NavLink
           to="/app/products"
           className="Nav__link Nav__btn"
           isActive={(match) => (!match || !match.isExact) ? false : true}
         >
-          Products
+          Assets
         </NavLink>
       </div>
       <div className="Nav__item">

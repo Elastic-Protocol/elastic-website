@@ -18,3 +18,106 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.TokenSale {
+  background: rgba(255,255,255,0.08);
+  color: $defaultFontColor;
+  border: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  @media (min-width: $lg) {
+    height: calc(406px + 1rem);
+  }
+  &:hover {
+    transform: scale(1.04);
+    color: inherit;
+    background: rgba(255,255,255,0.16);
+  }
+}
+
+.TokenSale__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.250rem;
+  .ant-badge-status-dot {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+}
+
+.TokenSale__badge {
+  width: 100px;
+}
+
+.TokenSale__title {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  > h4 {
+    font-size: 1.75rem;    
+    line-height: 1.875rem;
+  }
+}
+
+.TokenSale__icon {
+  margin: 0 1rem 0 -4px;
+  width: 50px;
+  height: 50px;
+}
+
+.TokenSale__description {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 0.425rem;
+  min-height: 3.563rem;
+}
+
+.TokenSale__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.TokenSale__list {
+  list-style-type: none;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+  border-top: $tableBorder;
+  padding-top: 1rem;
+  > li {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.TokenSale__label {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.TokenSale__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TokenSale__tempImage {
+  margin-top: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.Icon__polkastarter {
+  width: 180px;
+  height: auto;
+}
