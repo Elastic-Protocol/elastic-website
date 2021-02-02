@@ -42,7 +42,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.250rem;
+  margin-bottom: 1.375rem;
   .ant-badge-status-dot {
     width: 0.875rem;
     height: 0.875rem;
@@ -50,7 +50,17 @@
 }
 
 .TokenSale__badge {
-  width: 100px;
+  width: 110px;
+  padding: 0.250rem 0.5rem;
+  border-radius: 1rem;
+  background-color: $secondaryColor;
+  color: $defaultFontColor;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  .ant-badge-status-text {
+    margin-left: 0.5rem;
+  }
 }
 
 .TokenSale__title {
@@ -64,13 +74,13 @@
 }
 
 .TokenSale__icon {
-  margin: 0 1rem 0 -4px;
-  width: 50px;
-  height: 50px;
+  margin: 0 0.875rem 0 -2px;
+  width: 35px;
+  height: 35px;
 }
 
 .TokenSale__description {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.4;
   margin-bottom: 0.425rem;
   min-height: 3.563rem;
@@ -92,17 +102,19 @@
   margin-top: 1rem;
   border-top: $tableBorder;
   padding-top: 1rem;
+  padding-bottom: 0.5rem;
   > li {
     display: flex;
     flex-direction: column;
     font-size: 1.125rem;
     line-height: 1.4;
     margin-bottom: 0.5rem;
+    font-weight: bold;
   }
 }
 
 .TokenSale__label {
-  font-weight: bold;
+  font-weight: 300;
   font-size: 0.875rem;
 }
 
@@ -110,11 +122,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: $tableBorder;
+  padding-top: 1rem;
 }
 
 .TokenSale__tempImage {
-  margin-top: 0.5rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0.75rem;
+  background: #151325;
+  border-radius: 0.5rem;
+  > img {
+    max-width: 100%;
+  }
 }
 
 .Icon__polkastarter {

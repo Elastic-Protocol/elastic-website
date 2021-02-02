@@ -40,7 +40,7 @@ const Navigation = () => {
       </div>
       <div className="Nav__item">
         <NavLink
-          to="/app/products/els"
+          to="/app/products/ELS"
           className="Nav__link Nav__btn"
           isActive={(match) => (!match || !match.isExact) ? false : true}
         >

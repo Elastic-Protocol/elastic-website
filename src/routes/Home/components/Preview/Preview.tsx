@@ -37,7 +37,7 @@ const Preview = () => {
                 <h4>Elastic Token IDO</h4>
               </div>
               <div className="TokenSale__badge">
-                <Badge color="green" /> in 5 days
+                <Badge color="#f40b79" /> in 5 days
               </div>
             </div>
             <div className="TokenSale__content">
@@ -50,7 +50,7 @@ const Preview = () => {
                   $1,000,000
                 </li>
                 <li>
-                  <span className="TokenSale__label">ELS available</span>{" "}
+                  <span className="TokenSale__label">Total distribution</span>{" "}
                   1,000,000 ELS
                 </li>
                 <li>
@@ -59,14 +59,16 @@ const Preview = () => {
                 </li>
                 <li>
                   <span className="TokenSale__label">Max Allocation</span>{" "}
-                  100.00 ETH
+                  10.00 ETH
                 </li>
               </ul>
-              <img src={DummySaleProgress} alt="" className="TokenSale__tempImage" />
+              <div className="TokenSale__tempImage">
+                <img src={DummySaleProgress} alt="" />
+              </div>
             </div>
             <div className="TokenSale__actions">
               <div>
-                <a className="Btn Btn--primary" href="https://polkastarter.com/pools/c90397e99cf3a11353707554e5" target="_blank" rel="noreferrer">Join Sale</a>
+                <a className="Btn Btn--tertiary" href="https://polkastarter.com/pools/c90397e99cf3a11353707554e5" target="_blank" rel="noreferrer">Join Sale</a>
                 <a className="Btn Btn--ghost" href={`${DOCS_ADDRESS}/protocol/elastic-token/community-launch`} target="_blank" rel="noreferrer">ELS Tokenomics</a>
               </div>
               <IconPolka className="Icon__polkastarter" />
