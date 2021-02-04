@@ -9,7 +9,7 @@ import './HeroText.scss';
 const HeroText: FC = () => (
   <div className="HeroText">
     <h1>Trustless self-collateralizing markets</h1>
-    <p>Elastic's self-collateralizing synthetic assets enable the creation of innovative new markets that can track the price of anything.</p>
+    <p>Elastic's self-collateralizing synthetic assets track the price of real world assets and enable the creation of innovative new markets.</p>
     <div className="HeroText__actions">
       <div><Link to={`/start`} className="Btn Btn--secondary">Get started</Link></div>
       <div><a href={`${DOCS_ADDRESS}`} className="Btn Btn--ghost" target="_blank" rel="noreferrer">Read docs</a></div>

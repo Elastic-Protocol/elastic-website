@@ -30,7 +30,8 @@ const Home: FC = () => (
       <Row className="Section__container">
         <Col lg={{ span: 18, offset: 3 }} xs={{ span: 24 }}>
           <h2 className="text-centered heading-clipped">A new class of financial products</h2>
-          <p className="text-centered">Elastic Assets derive their value from the performance of an underlying resource without the need to collateralize or hold the resource. Almost anything can be ‘elasticized’ to provide exposure to a resource - enabling the creation of innovative new financial markets.</p>
+          <p className="text-centered">Elastic’s synthetic assets, called Elastic Assets, derive their value from the performance of an underlying resource without the need to collateralize or hold the resource to issue the asset. By removing the burden of collateral, Elastic solves the debt fluctuation issue experienced by other synthetic-type assets and eliminates the risk of liquidation.</p>
+          <p className="text-centered">Almost anything can be ‘elasticized’ to provide exposure to a resource - enabling the creation of innovative new financial markets.</p>
         </Col>
       </Row>
       <Row className="Section__container">
