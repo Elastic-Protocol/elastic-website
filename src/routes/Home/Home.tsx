@@ -30,8 +30,8 @@ const Home: FC = () => (
       <Row className="Section__container">
         <Col lg={{ span: 18, offset: 3 }} xs={{ span: 24 }}>
           <h2 className="text-centered heading-clipped">A new class of financial products</h2>
-          <p className="text-centered">Elastic’s synthetic assets, called Elastic Assets, derive their value from the performance of an underlying resource without the need to collateralize or hold the resource to issue the asset. By removing the burden of collateral, Elastic solves the debt fluctuation issue experienced by other synthetic-type assets and eliminates the risk of liquidation.</p>
-          <p className="text-centered">Almost anything can be ‘elasticized’ to provide exposure to a resource - enabling the creation of innovative new financial markets.</p>
+          <p className="text-centered">Elastic's unique synthetic assets derive their value from the performance of an underlying resource without the requirement to collateralize or hold the resource. By removing the burden of collateral, Elastic solves the debt fluctuation issue experienced by other synthetic-type assets, eliminating the risk of liquidation.</p>
+          <p className="text-centered">Anything with a reliable price feed can be ‘elasticized’ and traded including: commodities, forex, cryptocurrencies, equities, derivatives as well as novel new financial products.</p>  
         </Col>
       </Row>
       <Row className="Section__container">
@@ -84,7 +84,7 @@ const Home: FC = () => (
         <Col lg={{ span: 11, offset: 0 }} xs={{ span: 24 }} className="vertical-centered">
           <div>
             <h2>How does it work?</h2>
-            <p>Elastic's Assets self-collateralize by automatically adjusting their supply to match the value of the underlying resources they represent.</p>
+            <p>Elastic Assets self-collateralize by automatically adjusting their supply to match the value of the underlying resources they represent.</p>
             <p>Supply adjustments are triggered in response to price changes of the underlying resources or the Elastic asset itself.</p>
             <a 
               className="Btn Btn--primary"
@@ -134,7 +134,7 @@ const Home: FC = () => (
       <Row className="Section__container">
         <Col lg={{ span: 18, offset: 3 }} xs={{ span: 24 }}>
           <h2 className="text-centered heading-clipped">Incentivized marketplace</h2>
-          <p className="text-centered">The Elastic ecosystem consists primarily of three types of users: Elastic Token holders, Liquidity Providers and Elastic Asset holders.</p>
+          <p className="text-centered">Elastic provides a reward mechanism to incentivize participation and stability throughout all stages of Elastic Asset markets.</p>
         </Col>
       </Row>
       <Row className="Section__container">

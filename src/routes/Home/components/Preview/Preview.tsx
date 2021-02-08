@@ -42,7 +42,7 @@ const Preview = () => {
             </div>
             <div className="TokenSale__content">
               <p className="TokenSale__description">
-                Elastic is conducting an IDO on Polkastarter to seed the inital distribution of ELS. 100% of funds raised are used to provide liquidty for the Uniswap ELS/ETH pair. <a href={`${DOCS_ADDRESS}/protocol/elastic-token/community-launch`} target="_blank" rel="noreferrer">Learn more</a>.
+                Join our public sale on Polkastarter. 100% of funds raised are used to provide liquidty for the Uniswap ELS/ETH pair. <a href={`${DOCS_ADDRESS}/protocol/elastic-token/community-launch`} target="_blank" rel="noreferrer">Learn more</a>.
               </p>
               <ul className="TokenSale__list">  
                 <li>
